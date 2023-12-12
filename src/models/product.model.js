@@ -75,7 +75,7 @@ const electronicSchema = new Schema({
     timestamps: true
 })
 
-const FurnitureSchema = new Schema({
+const furnitureSchema = new Schema({
     manufacturer:{
         type: String,
         require: true
@@ -93,5 +93,5 @@ module.exports = {
     product:model(DOCUMENT_NAME, productSchema),
     electronic:model('Electronic', electronicSchema),
     clothing:model('Clothing', clothingSchema),
-    furniture:model('Furniture', FurnitureSchema),
+    furniture:model('Furniture', furnitureSchema),
 }
